@@ -7,12 +7,12 @@ module.exports = {
         print: './src/print.js'
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, "dist")
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: '管理输出'
+            title: 'Caching'
         }),
         new CleanWebpackPlugin()
     ]
