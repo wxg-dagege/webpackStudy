@@ -8,10 +8,6 @@ module.exports = {
             import: './src/index.js',
             dependOn: 'shared'
         },
-        another: {
-            import: './src/another-module.js',
-            dependOn: 'shared'
-        },
         shared: 'lodash'
     },
     output: {
@@ -20,11 +16,6 @@ module.exports = {
         publicPath: '/'
     },
     devtool: 'inline-source-map',
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
-    },
     devServer: {
         contentBase: './dist'
     },
